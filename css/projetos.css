@@ -1,0 +1,142 @@
+#projetos {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.avaliacao-projetos, .img-avaliacao {
+  border-radius: 30% 70% 23% 77% / 62% 39% 61% 38%;
+}
+
+.sobre-projetos {
+  width: 45%;
+  text-align: center;
+  z-index: 1;
+  align-self: start;
+  margin-top: 15vh;
+  margin-left: 15vh;
+}
+
+#projetos h2 {
+  padding-top: 10px;
+  color: rgb(255, 255, 255);
+}
+
+.projetos-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+}
+
+.projetos-conteudo {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.projetos-conteudo h2 {
+  margin-bottom: 10px;
+}
+
+.projetos-conteudo a {
+  border: 1px solid white;
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+} 
+
+.projetos-conteudo a:hover {
+  background: white;
+  color: #E2711D;
+  cursor: pointer;
+}
+
+.img-pequi, .img-avaliacao, .img-educacao  {
+  width: 100%;
+  border-radius: 76% 24% 72% 28% / 42% 52% 48% 58%;
+  position: relative;
+}
+
+.pequi-projetos, .avaliacao-projetos, .educacao-projetos {
+  width: 30%;
+  padding: 0px 0px 0px 0px;
+  margin-top: 35px;
+  background: rgba(226,113,29,1);
+  box-shadow: 8px 11px 25px 3px rgba(226,113,29,0.75);
+  -webkit-box-shadow: 8px 11px 25px 3px rgba(226,113,29,0.75);
+  -moz-box-shadow: 8px 11px 25px 3px rgba(226,113,29,0.75);
+  position: relative;
+  border-radius: 76% 24% 72% 28% / 42% 52% 48% 58%;
+}
+
+.wave-projects {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.wave-projects svg {
+  position: relative;
+  display: block;
+  width: calc(139% + 1.3px);
+  height: 400px;
+}
+
+.wave-projects .shape-fill {
+  fill: #E2711D;
+}
+
+@media only screen and (max-width: 600px) {
+
+  #projetos {
+    height: auto;
+  }
+
+  .sobre-projetos {
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    align-self: start;
+    margin-top: 10vh;
+    margin-left: 0vh;
+  }
+
+  .projetos-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    position: relative;
+  }
+
+  .pequi-projetos, .avaliacao-projetos, .educacao-projetos {
+    width: 96%;
+    padding: 0px 0px 0px 0px;
+    margin-top: 35px;
+    background: rgba(226,113,29,1);
+    box-shadow: 8px 11px 25px 3px rgba(226,113,29,0.75);
+    -webkit-box-shadow: 8px 11px 25px 3px rgba(226,113,29,0.75);
+    -moz-box-shadow: 8px 11px 25px 3px rgba(226,113,29,0.75);
+    position: relative;
+    border-radius: 76% 24% 72% 28% / 42% 52% 48% 58%;
+  }
+
+  .wave-projects svg {
+    height: 200px;
+  }
+}
